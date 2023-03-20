@@ -1,7 +1,6 @@
 import request from '../request.js'
 
 export function test(params) {
-  debugger
   return request({
     url: '/test/queryUserList', //接口路径
     method: 'POST',

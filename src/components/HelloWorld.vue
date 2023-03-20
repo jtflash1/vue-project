@@ -32,6 +32,7 @@
     </ul>
   </div>
   <button @click="testbtn">测试</button>
+  <div><span>{{ returnInfo }}</span></div>
 </template>
 
 <script>
@@ -45,7 +46,6 @@ export default {
   setup() {
     const returnInfo = ref('')
     function testbtn() {
-      debugger
       // let params = { "userId": "111111" }
       // let obj = {"params": JSON.stringify(params)}
       test().then((res) => {
