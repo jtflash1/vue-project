@@ -4,7 +4,8 @@ module.exports = defineConfig({
   devServer: {
     proxy: {
       '/api': {
-        target: 'http://192.168.154.128:9999', // 后台请求地址
+        //target: 'http://192.168.154.128:9999', // 后台请求地址
+        target: 'http://192.168.84.128:9999/', //后台请求地址
         ws: true,
         changeOrigin: true,
         pathRewrite: {
